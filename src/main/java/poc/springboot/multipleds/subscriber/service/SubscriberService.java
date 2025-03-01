@@ -11,7 +11,6 @@ import poc.springboot.multipleds.subscriber.Subscriber;
 @Service
 public class SubscriberService
 {
-
 	private final JdbcClient jdbcClient;
 
 	public SubscriberService(@Qualifier("subscriberJdbcClient") JdbcClient jdbcClient)
@@ -25,5 +24,4 @@ public class SubscriberService
 				.query(Subscriber.class)
 				.list();
 	}
-
 }
